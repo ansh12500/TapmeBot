@@ -1,0 +1,21 @@
+type User {
+  id: ID!
+  username: String!
+  taps: Int!
+}
+
+type AuthPayload {
+  token: String!
+  user: User!
+}
+
+type Query {
+  user(username: String!): User
+  allUsers: [User!]!
+}
+
+type Mutation {
+  signUp(username: String!, password: String!): User!
+  signIn(username: String!, password: String!): AuthPayload!
+  tap(username: String!): User!
+}

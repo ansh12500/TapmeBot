@@ -1,0 +1,84 @@
+/* Common button styles */
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: block;
+  width: 100%; /* Makes button fill the container width */
+  margin-bottom: 15px;
+}
+
+/* Hover effect */
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Click effect */
+button:active {
+  background-color: #003f7f;
+  transform: scale(0.98);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile responsive media query */
+@media (max-width: 600px) {
+  button {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+}
+
+/* Background image and general styles */
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('./components/pic1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Mobile media query for smaller screens */
+@media (max-width: 600px) {
+  button {
+    width: 80%; /* Makes the button width more flexible on mobile */
+    padding: 12px 20px; /* Adjusts padding for mobile */
+    font-size: 16px; /* Smaller text size for mobile */
+  }
+  
+  /* You can also adjust the spacing between buttons for mobile */
+  button {
+    margin-bottom: 10px;
+  }
+}
+
+  h1 {
+    color: #fff;
+  }
+
+ 
+  
+  nav {
+    background-color: #0e12fc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #333;
+    text-align: center;
+  }
+  
